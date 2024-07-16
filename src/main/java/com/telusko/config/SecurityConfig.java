@@ -39,7 +39,6 @@ public class SecurityConfig {
                                 .requestMatchers("/").permitAll()
                                 .anyRequest().authenticated()
                 )
-                .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults());
 
 
